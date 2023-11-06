@@ -1,3 +1,208 @@
 .App {
   text-align: center;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* Reset some default styles */
+body, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the thumb */
+  border-radius: 18px; /* Set the roundness of the thumb */
+}
+
+/* Track on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4949; /* Set the color of the thumb on hover */
+}
+
+/* Button (arrows) */
+::-webkit-scrollbar-button {
+  display: none; /* Hide scrollbar arrows */
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+  background: #ffffff00; /* Set the background color of the track on hover */
+}
+/* Set background color and text color for the entire page */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background-color: #000;
+  width: 100%;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  
+  color: #fff;
+}
+
+/* Style the banner image */
+.banner img {
+  width: 100%;
+}
+
+/* Style the "What We Do" and "How We Do" sections */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style the full-width image */
+.full-width-image img {
+  width: 100%;
+}
+
+/* Style the footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+  margin-top: 200px;
+  width:600px;
+  background: #fff;
+  padding-bottom:30px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text{
+  color:#1DE755;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.underline{
+  width: 61px;
+  height:6px;
+  background: #1DE755;
+  border-radius: 9px;
+}
+
+.inputs{
+  margin-top:55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+}
+
+.input{
+  display:flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: #eaeaea;
+  border-radius: 6px;
+}
+
+.input img{
+  margin: 0px 30px;
+}
+
+.input input{
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+
+.forgot-password{
+  padding-left: 62px;
+  margin-top: 27px;
+  color: #797979;
+  font-size: 18px;
+}
+
+.forgot-password span{
+  color:#1DE755;
+  cursor: pointer;
+}
+
+.submit-container{
+  display:flex;
+  gap:30px;
+  margin: 60px auto;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #1DE755;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.grey{
+  background: #fff;
+  color:#676767;
+}
