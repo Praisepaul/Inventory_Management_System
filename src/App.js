@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Dashboard from './components/dashboard';
 import Login from './components/login';
 import { Route, Routes, BrowserRouter as Router, Link } from 'react-router-dom';
 
@@ -14,7 +13,7 @@ function App() {
           <li><a href="#home">Home</a></li>
           <li><a href="#features">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="https://athin123.github.io/react_login/">Login</a></li>
         </ul>
       </nav>
