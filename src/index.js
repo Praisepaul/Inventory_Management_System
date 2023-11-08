@@ -11,6 +11,10 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="/login" element={<LoginSignup />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/logout" element={<LoginSignup />} />
+      <Route path="/orders" element={<Dashboard />} />
+      <Route path="/logout" element={<LoginSignup />} />
+      <Route path="/logout" element={<LoginSignup />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
