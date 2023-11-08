@@ -1,0 +1,43 @@
+const Columns = [
+  {
+    id: '1',
+    Ic: 'ABC001',
+    Pd: 'Product 1',
+    Qp: '100',
+    Pu: '100',
+    Qis: '50',
+    Vh: '5000',
+    Rl: '25',
+    Rqs: '160',
+    Qs: '50',
+    Dp: '',
+  },
+  {
+    id: '1',
+    Ic: 'ABC002',
+    Pd: 'Product 2',
+    Qp: '100',
+    Pu: '100',
+    Qis: '50',
+    Vh: '5000',
+    Rl: '25',
+    Rqs: '160',
+    Qs: '50',
+    Dp: '',
+  },
+  {
+    id: '1',
+    Ic: 'ABC003',
+    Pd: 'Product 3',
+    Qp: '100',
+    Pu: '100',
+    Qis: '50',
+    Vh: '5000',
+    Rl: '25',
+    Rqs: '160',
+    Qs: '50',
+    Dp: '',
+  },
+]
+
+export default Columns
