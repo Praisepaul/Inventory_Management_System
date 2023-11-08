@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/stylesheets/login.css';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate, Link } from 'react-router-dom';
 import user_icon from '../assets/icons/person.png';
 import email_icon from '../assets/icons/email.png';
 import password_icon from '../assets/icons/password.png';
@@ -37,11 +37,11 @@ const LoginSignup = () => {
                   </div>
               </div>
               {action === "Sign Up" ? <div></div> : <div className="forgot-password">Lost Password? <span>Click Here!</span></div>}
-
+                <Link to={'/dashboard'}>
               <div className="submit-container">
                   <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Login"); } }>Login</div>
-
               </div>
+              </Link>
           </div>
   )
 }
