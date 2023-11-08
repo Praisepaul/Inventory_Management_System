@@ -73,6 +73,7 @@ body {
 /* Style the banner image */
 .banner img {
   width: 100%;
+  margin-top: 85px;
 }
 
 /* Style the "What We Do" and "How We Do" sections */

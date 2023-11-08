@@ -5,15 +5,16 @@ import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './assets/icons/logo.png';
 import banner_image from './assets/images/banner.png';
+import service_image from './assets/images/service.png';
 function App() {
   return (
     
-    <div className="landing-page">
+    <div className="landing-page"  id="home">
       {/* Navbar */}
-      <nav className="navbar" id="home">
+      <nav className="navbar">
         <div className="logo"><img style={{ width: '50px', height: '50px' }} src={logo}></img></div>
         <ul className="menu">
-          <li><Link to={'/'}><a href="#home">Home</a></Link></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#features">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -43,7 +44,7 @@ function App() {
 
       {/* Full-width Image */}
       <div className="full-width-image" id="services">
-        <img src="../images/service.png" alt="Full Width" />
+        <img src={service_image} alt="Full Width" />
       </div>
 
       {/* Footer */}
