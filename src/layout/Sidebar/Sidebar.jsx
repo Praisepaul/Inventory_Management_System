@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { personsImgs } from '../../utils/images';
 import { navigationLinks } from '../../data/data';
 import "./Sidebar.css";
-import { Navigate, useNavigate, Link } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
   const [activeLinkIdx, setActiveLinkIdx] = useState(0); // Initialize with 0 for the "Home" link
