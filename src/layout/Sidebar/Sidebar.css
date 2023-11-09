@@ -46,7 +46,6 @@
   }
 
   .nav-link3 {
-    
     display: block;
     height: 44px;
     border-radius: 8px;
@@ -61,9 +60,8 @@
   }
   .nav-link3:hover {
     border: 1px solid var(--clr-primar-light);
-  }
-  .nav-link3.active {
-    background-color: var(--clr-pumpkin);
+    background-color: rgb(217, 141, 0);
+    color: rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
       rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   }
@@ -71,7 +69,7 @@
     width: 22px;
   }
   .nav-link3-text {
-    color:aliceblue;
+    color:rgb(255, 255, 255);
     text-decoration: none;
     text-transform: capitalize;
   }
