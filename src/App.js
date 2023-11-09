@@ -13,9 +13,9 @@ function App() {
     
     <div className="landing-page"  id="home">
       {/* Navbar */}
-      <nav className="navbar">
-        <div className="logo"><img style={{ width: '50px', height: '50px' }} src={logo}></img></div>
-        <ul className="menu">
+      <nav className="navbar" style={{position: 'fixed'}}>
+        <div className="logo"><img style={{ width: '80px', height: '60px' }} src={logo}></img></div>
+        <ul className="menu" style={{textDecoration: 'none'}}>
           <li><a href="#home">Home</a></li>
           <li><a href="#features">About</a></li>
           <li><a href="#services">Services</a></li>
