@@ -15,7 +15,6 @@ ReactDOM.render(
       <Route path="/login" element={<LoginSignup />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/stocks" element={<Stocks />} />
-
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

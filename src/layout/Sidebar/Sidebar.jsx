@@ -1,11 +1,16 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { personsImgs } from '../../utils/images';
 import { navigationLinks } from '../../data/data';
 import "./Sidebar.css";
 import { Navigate, useNavigate, Link } from 'react-router-dom';
 
 const Sidebar = () => {
-  const [activeLinkIdx] = useState(1);
+  const [activeLinkIdx, setActiveLinkIdx] = useState(0); // Initialize with 0 for the "Home" link
+
+  const handleLinkClick = (index) => {
+    setActiveLinkIdx(index);
+  };
 
   return (
     <div className={ `sidebar3` }>
@@ -33,7 +38,7 @@ const Sidebar = () => {
           </ul>
       </nav>
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
