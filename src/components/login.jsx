@@ -13,7 +13,7 @@ const LoginSignup = () => {
         navigate('/');
       };    
   return (
-    <div className='container'>
+    <div className='container-login'>
         <button onClick={goBack} className="back-button">
           <img className='back-button-icon' src={back}></img>
       </button>

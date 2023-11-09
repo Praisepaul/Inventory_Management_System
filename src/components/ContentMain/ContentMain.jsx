@@ -22,24 +22,6 @@ const ContentMain = () => {
             <Stocks />
             <Orders />
         </div>
-
-        <div className="content-grid-one">
-          <center>
-            <PieChart width={400} height={400}>
-              <Pie
-                dataKey="users"
-                isAnimationActive={false}
-                data={data}
-                cx={200}
-                cy={200}
-                outerRadius={80}
-                fill="#8884d8"
-                label
-              />
-              <Tooltip />
-            </PieChart>
-          </center>
-        </div>
     </div>
   )
 }
