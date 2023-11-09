@@ -1,46 +1,21 @@
 import "./NavbarStyles.css"; 
-import 'bootstrap/dist/css/bootstrap.css'
-
+import { Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../../assets/icons/logo.png';
 function Navbar() {
   return (
-    <>
-      <nav2>
-        <a href='#'>
-          {' '}
-          <svg
-            id='logo-35'
-            width='50'
-            height='39'
-            viewBox='0 0 50 39'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            {' '}
-            <path
-              d='M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z'
-              class='ccompli1'
-              fill='#007AFF'
-            ></path>{' '}
-            <path
-              d='M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z'
-              class='ccustom'
-              fill='#312ECB'
-            ></path>{' '}
-          </svg>
-        </a>
-
-        <div>
-          <ul id="navbar2">
-            <li>
-              <a href='/dashboard'>HOME</a>
-            </li>
-            <li>
-              <a href='/login'>LOGOUT</a>
-            </li>
-          </ul>
-        </div>
-      </nav2>
-    </>
+    <nav className="navbar">
+        <div className="logo"><img style={{ width: '80px', height: '60px' }} src={logo}></img></div>
+        <ul className="menu" style={{textDecoration: 'none'}}>
+          <li><Link to={'/dashboard'}>Home</Link></li>
+          <li><Link to={'/orders'}>Orders</Link></li>
+          <li><Link to={'/stocks'}>Stocks</Link></li>
+          <li><Link to={'/login'}>
+            <Button>Logout</Button>
+            </Link></li>
+        </ul>
+      </nav>
   )
 }
 
