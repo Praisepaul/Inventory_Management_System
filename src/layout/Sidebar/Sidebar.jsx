@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { personsImgs } from '../../utils/images';
 import { navigationLinks } from '../../data/data';
 import "./Sidebar.css";
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
   const [activeLinkIdx, setActiveLinkIdx] = useState(0); // Initialize with 0 for the "Home" link
@@ -12,29 +13,29 @@ const Sidebar = () => {
   };
 
   return (
-    <div className={`sidebar`}>
-      <div className="user-info">
-        <div className="info-img img-fit-cover">
-          <img src={personsImgs.person_one} alt="profile image" />
-        </div>
-        <span className="info-name">USER</span>
+    <div className={ `sidebar3` }>
+      <div className="user-info3">
+          <div className="info-img3 img-fit-cover">
+              <img src={ personsImgs.person_one } alt="profile image" />
+          </div>
+          <span className="info-name3">USER</span>
       </div>
 
-      <nav className="navigation">
-        <ul className="nav-list">
-          {navigationLinks.map((navigationLink, index) => (
-            <li className="nav-item" key={navigationLink.id}>
-              <Link
-                to={navigationLink.path}
-                className={`nav-link ${index === activeLinkIdx ? 'active' : ''}`}
-                onClick={() => handleLinkClick(index)}
-              >
-                <img src={navigationLink.image} className="nav-link-icon" alt={navigationLink.title} />
-                <span className="nav-link-text">{navigationLink.title}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <nav className="navigation3">
+          <ul className="nav-list3">
+            {
+              navigationLinks.map((navigationLink) => (
+                <li className="nav-item3" key = { navigationLink.id }>
+                  <Link to={navigationLink.link}>
+                    <a href="#" className={ `nav-link3 ${ navigationLink.id === activeLinkIdx ? 'active' : null }` }>
+                        <img src={ navigationLink.image } className="nav-link3-icon" alt = { navigationLink.title } />
+                        <span className="nav-link3-text">{ navigationLink.title }</span>
+                    </a>
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
       </nav>
     </div>
   );

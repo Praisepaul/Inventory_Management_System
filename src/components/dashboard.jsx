@@ -1,4 +1,4 @@
-import './dashboard.css';
+import '../assets/stylesheets/dashboard.css';
 import Sidebar from '../layout/Sidebar/Sidebar';
 import Content from '../layout/Content/Content';
 
