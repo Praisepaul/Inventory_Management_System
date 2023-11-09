@@ -35,13 +35,14 @@ const LoginSignup = () => {
                       <img src={password_icon} alt="" />
                       <input type="password" placeholder='Password' />
                   </div>
-              </div>
-              {action === "Sign Up" ? <div></div> : <div className="forgot-password">Lost Password? <span>Click Here!</span></div>}
-                <Link to={'/dashboard'}>
+                  {action === "Sign Up" ? <div></div> : <div className="forgot-password">Lost Password? <span>Click Here!</span></div>}
+                  <Link to={'/dashboard'}>
               <div className="submit-container">
                   <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Login"); } }>Login</div>
               </div>
               </Link>
+              </div>
+                
           </div>
   )
 }
