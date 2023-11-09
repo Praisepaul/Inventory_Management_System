@@ -6,8 +6,8 @@ export const navigationLinks = [
     { id: 1, title: 'Home', image: iconsImgs.home,link:'/dashboard' },
     { id: 2, title: 'Orders', image: iconsImgs.budget,link:'/orders'  },
     { id: 3, title: 'Stocks', image: iconsImgs.report,link:'/stocks'  },
-    { id: 5, title: 'Edit Stocks', image: iconsImgs.bills, link:'/stocks'},
-    { id: 6, title: 'Log Out', image: iconsImgs.alert,link:'/logout'},
+    { id: 5, title: 'Edit Stocks', image: iconsImgs.bills, link:'/editstocks'},
+    { id: 6, title: 'Log Out', image: iconsImgs.alert,link:'/login'},
 ];
 
 // In your component rendering the navigation links
