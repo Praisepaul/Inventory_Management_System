@@ -49,8 +49,54 @@ function App() {
         <img src={service_image} alt="Full Width" />
       </div>
 
+      {/* Contact */}
+<div className="contact" id="contact">
+  {/* Google Maps */}
+  <div className="map-container">
+  <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.590154264044!2d80.49808730840844!3d16.49627768418111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f27d40f21c55%3A0x1490eacd54859850!2sVIT-AP%20University!5e0!3m2!1sen!2sin!4v1699584289450!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Google Map"
+    ></iframe>
+  </div>
+
+  {/* Contact Form */}
+  <div className="contact-form">
+    <h2>Contact Us</h2>
+    {/* Your contact form JSX goes here */}
+    {/* Add input fields, labels, and a submit button */}
+    <form action="https://formspree.io/f/xoqobobq"
+  method="POST">
+      {/* Example input field */}
+      <div className="form-group">
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="name">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="name">Messsage:</label>
+        <input type="text" id="message" name="message" required />
+      </div>
+
+      
+      {/* Submit button */}
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
       {/* Footer */}
-      <footer className="footer" id="contact">
+      <footer className="footer">
         <p>&copy; COPYRIGHTS 2023 &nbsp;&nbsp; VIT-AP UNIVERSITY, INAVOLU</p>
       </footer>
       

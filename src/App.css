@@ -101,6 +101,75 @@ body {
   height: auto;
 }
 
+/* ... (previous styles) */
+
+/* Style the contact section */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: #111; /* Set background color for the contact section */
+}
+
+/* Style the map container */
+.map-container {
+  flex: 1;
+  max-width: 50%; /* Adjust the width of the map container */
+  padding: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px; /* Set the height of the map container */
+  border: none;
+}
+
+/* Style the contact form */
+.contact-form {
+  flex: 1;
+  max-width: 50%; /* Adjust the width of the contact form */
+  padding: 20px;
+  background-color: #222; /* Set background color for the contact form */
+  border-radius: 10px;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+.contact-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* Style the footer */
 .footer {
   text-align: center;
