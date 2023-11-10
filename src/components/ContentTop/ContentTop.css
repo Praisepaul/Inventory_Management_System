@@ -20,6 +20,7 @@
 }
 .content-top-btn {
   margin-left: 18px;
+  background-color: var(--clr-secondary);
 }
 .content-top-btn img {
   width: 24px;

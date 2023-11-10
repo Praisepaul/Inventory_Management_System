@@ -73,6 +73,8 @@ body {
 /* Style the banner image */
 .banner img {
   width: 100%;
+  height: auto;
+  padding-top: 70px;
 }
 
 /* Style the "What We Do" and "How We Do" sections */
@@ -96,6 +98,7 @@ body {
 /* Style the full-width image */
 .full-width-image img {
   width: 100%;
+  height: auto;
 }
 
 /* Style the footer */

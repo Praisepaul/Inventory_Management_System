@@ -8,6 +8,10 @@ import Dashboard from './components/dashboard';
 import Stocks from './components/StocksPage/Stocks'
 import ProductForm from './components/StocksPage/addStocks';
 import ProductEditForm from './components/StocksPage/editStocks';
+import OrderEditForm from './components/OrdersPage/editOrders';
+import OrderForm from './components/OrdersPage/addOrders';
+import OrderHome from './components/OrdersPage/Home_order';
+import Orders from './components/OrdersPage/Orders';
 
 
 ReactDOM.render(
@@ -19,6 +23,9 @@ ReactDOM.render(
       <Route path="/stocks" element={<Stocks />} />
       <Route path="/addstocks" element={<ProductForm />} />
       <Route path="/editstocks" element={<ProductEditForm />} />
+      <Route path="/editorder" element={<OrderEditForm />} />
+      <Route path="/orders" element={<Orders />} />
+      <Route path="/addorder" element={<OrderForm />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
